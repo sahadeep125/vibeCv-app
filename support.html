@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6B7FD8" />
+    <title>VibeCV Support | Contact Us</title>
+    <meta name="description" content="VibeCV Support - Get help with our AI resume builder. Contact us for assistance." />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: { 50: "#eff1fc", 100: "#e0e3f9", 200: "#c2c9f3", 300: "#9ba5ec", 400: "#6b7fd8", 500: "#5a6ac6", 600: "#4852ab", 700: "#3d448c", 800: "#353a73", 900: "#2e325d" },
+              secondary: "#1a1f4b",
+            },
+            fontFamily: { sans: ["Outfit", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+    <style>
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .social-icon {
+        display: flex; align-items: center; justify-content: center;
+        width: 44px; height: 44px; border-radius: 12px; font-size: 1.1rem;
+        color: white; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+      .social-icon:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); color: white; }
+      .social-facebook { background: linear-gradient(135deg, #1877f2 0%, #0d5bbf 100%); }
+      .social-facebook:hover { background: linear-gradient(135deg, #1a7cff 0%, #0e62d4 100%); }
+      .social-instagram { background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+      .social-instagram:hover { filter: brightness(1.15); }
+      .social-youtube { background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%); }
+      .social-youtube:hover { background: linear-gradient(135deg, #ff1a1a 0%, #e60000 100%); }
+      .social-play { background: linear-gradient(135deg, #00c853 0%, #00a843 100%); }
+      .social-play:hover { background: linear-gradient(135deg, #00e676 0%, #00c853 100%); }
+    </style>
+  </head>
+  <body class="font-sans text-secondary bg-slate-50 min-h-screen overflow-x-hidden">
+    <!-- Navigation -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 glass-nav">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 group">
+          <img src="logo.png" alt="VibeCV Logo" class="w-10 h-10 rounded-xl shadow-lg group-hover:rotate-12 transition-transform duration-300" />
+          <span class="text-2xl font-bold text-gray-800 tracking-tight">Vibe<span class="text-primary-400">CV</span></span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html#features" class="text-gray-600 hover:text-primary-400 font-medium transition-colors">Features</a>
+          <a href="index.html#how-it-works" class="text-gray-600 hover:text-primary-400 font-medium transition-colors">How It Works</a>
+          <a href="index.html#templates" class="text-gray-600 hover:text-primary-400 font-medium transition-colors">App Screenshots</a>
+          <a href="support.html" class="bg-primary-400 hover:bg-primary-500 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-primary-400/30 hover:shadow-primary-400/50 hover:-translate-y-0.5 transition-all duration-300">Support</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-xl">
+        <div class="flex flex-col p-6 gap-4">
+          <a href="index.html#features" class="text-gray-600 hover:text-primary-400 font-medium">Features</a>
+          <a href="index.html#how-it-works" class="text-gray-600 hover:text-primary-400 font-medium">How It Works</a>
+          <a href="index.html#templates" class="text-gray-600 hover:text-primary-400 font-medium">App Screenshots</a>
+          <a href="support.html" class="w-full text-center py-3 rounded-lg bg-primary-400 text-white font-bold">Support</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-28 pb-20">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-2">VibeCV Support</h1>
+        <p class="text-xl text-gray-600 mb-12">We're here to help. Get in touch with us for any questions or issues.</p>
+
+        <!-- Contact Info Card -->
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 mb-12">
+          <h2 class="text-xl font-bold text-gray-900 mb-6">Contact Us</h2>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-primary-500 flex-shrink-0">
+              <i class="fas fa-envelope text-xl"></i>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500 font-medium">Support Email</p>
+              <a href="mailto:sahadeep125@gmail.com" class="text-lg font-semibold text-primary-400 hover:text-primary-600 transition-colors">sahadeep125@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-secondary text-white pt-20 pb-10 border-t border-gray-800 mt-20">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <!-- Brand -->
+          <div class="col-span-1 md:col-span-2">
+            <a href="index.html" class="flex items-center gap-2 mb-6">
+              <img src="logo.png" alt="VibeCV Logo" class="w-8 h-8 rounded-lg" />
+              <span class="text-2xl font-bold">Vibe<span class="text-primary-400">CV</span></span>
+            </a>
+            <p class="text-gray-400 mb-6 max-w-sm">
+              VibeCV is the ultimate AI-powered resume builder designed to help you create professional resumes in minutes.
+            </p>
+            <div class="flex gap-3">
+              <a href="https://www.facebook.com/profile.php?id=61588194216632" target="_blank" rel="noopener noreferrer" class="social-icon social-facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/vibecvapp/" target="_blank" rel="noopener noreferrer" class="social-icon social-instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@VibeCvApp" target="_blank" rel="noopener noreferrer" class="social-icon social-youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://play.google.com/store/apps/details?id=com.deep125.vibecv" target="_blank" rel="noopener noreferrer" class="social-icon social-play" aria-label="Google Play"><i class="fab fa-google-play"></i></a>
+            </div>
+          </div>
+
+          <!-- Product Links (same as nav menu) -->
+          <div>
+            <h4 class="text-lg font-bold mb-6">Product</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li><a href="index.html#features" class="hover:text-primary-400 transition-colors">Features</a></li>
+              <li><a href="index.html#how-it-works" class="hover:text-primary-400 transition-colors">How It Works</a></li>
+              <li><a href="index.html#templates" class="hover:text-primary-400 transition-colors">App Screenshots</a></li>
+              <li><a href="support.html" class="hover:text-primary-400 transition-colors">Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Support Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-6">Support</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li><a href="support.html" class="hover:text-primary-400 transition-colors">Contact Us</a></li>
+              <li><a href="terms-of-service.html" class="hover:text-primary-400 transition-colors">Terms of Service</a></li>
+              <li><a href="privacy-policy.html" class="hover:text-primary-400 transition-colors">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+          <p>&copy; 2026 VibeCV. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var mobileBtn = document.getElementById("mobile-menu-btn");
+      var mobileMenu = document.getElementById("mobile-menu");
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>
