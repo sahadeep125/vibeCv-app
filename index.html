@@ -216,21 +216,25 @@
           <a
             href="#features"
             class="text-gray-600 hover:text-primary-400 font-medium transition-colors"
+            onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'features' });"
             >Features</a
           >
           <a
             href="#how-it-works"
             class="text-gray-600 hover:text-primary-400 font-medium transition-colors"
+            onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'how_it_works' });"
             >How It Works</a
           >
           <a
             href="#templates"
             class="text-gray-600 hover:text-primary-400 font-medium transition-colors"
+            onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'app_screenshots' });"
             >App Screenshots</a
           >
           <a
             href="support.html"
             class="bg-primary-400 hover:bg-primary-500 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-primary-400/30 hover:shadow-primary-400/50 hover:-translate-y-0.5 transition-all duration-300"
+            onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'support_nav' });"
           >
             Support
           </a>
@@ -251,10 +255,10 @@
         class="hidden md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-xl"
       >
         <div class="flex flex-col p-6 gap-4">
-          <a href="#features" class="text-gray-600 hover:text-primary-400 font-medium">Features</a>
-          <a href="#how-it-works" class="text-gray-600 hover:text-primary-400 font-medium">How It Works</a>
-          <a href="#templates" class="text-gray-600 hover:text-primary-400 font-medium">App Screenshots</a>
-          <a href="support.html" class="w-full text-center py-3 rounded-lg bg-primary-400 text-white font-bold">Support</a>
+          <a href="#features" class="text-gray-600 hover:text-primary-400 font-medium" onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'features_mobile' });">Features</a>
+          <a href="#how-it-works" class="text-gray-600 hover:text-primary-400 font-medium" onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'how_it_works_mobile' });">How It Works</a>
+          <a href="#templates" class="text-gray-600 hover:text-primary-400 font-medium" onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'app_screenshots_mobile' });">App Screenshots</a>
+          <a href="support.html" class="w-full text-center py-3 rounded-lg bg-primary-400 text-white font-bold" onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'support_mobile' });">Support</a>
         </div>
       </div>
     </header>
@@ -293,15 +297,17 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="bg-primary-400 hover:bg-primary-500 text-white px-8 py-4 rounded-full font-bold shadow-xl shadow-primary-400/30 hover:shadow-primary-400/50 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                onclick="gtag('event', 'download_click', { event_category: 'engagement', event_label: 'google_play', page: 'hero' });"
               >
                 <i class="fab fa-google-play text-xl"></i>
                 Get it on Google Play
               </a>
               <a
-                href="https://apps.apple.com/search?term=vibecv"
+                href="https://apps.apple.com/in/app/ai-resume-builder-vibecv/id6759809791"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                onclick="gtag('event', 'download_click', { event_category: 'engagement', event_label: 'app_store', page: 'hero' });"
               >
                 <i class="fab fa-apple text-xl"></i>
                 Download on App Store
@@ -556,15 +562,17 @@
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center gap-2 bg-white text-primary-600 hover:bg-gray-50 px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+              onclick="gtag('event', 'download_click', { event_category: 'engagement', event_label: 'google_play', page: 'cta' });"
             >
               <i class="fab fa-google-play text-2xl"></i>
               Google Play
             </a>
             <a
-              href="https://apps.apple.com/search?term=vibecv"
+              href="https://apps.apple.com/in/app/ai-resume-builder-vibecv/id6759809791"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center gap-2 bg-white text-primary-600 hover:bg-gray-50 px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+              onclick="gtag('event', 'download_click', { event_category: 'engagement', event_label: 'app_store', page: 'cta' });"
             >
               <i class="fab fa-apple text-2xl"></i>
               App Store
@@ -588,10 +596,10 @@
                 VibeCV is the ultimate AI-powered resume builder designed to help you create professional resumes in minutes.
             </p>
             <div class="flex gap-3">
-                <a href="https://www.facebook.com/profile.php?id=61588194216632" target="_blank" rel="noopener noreferrer" class="social-icon social-facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/vibecvapp/" target="_blank" rel="noopener noreferrer" class="social-icon social-instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@VibeCvApp" target="_blank" rel="noopener noreferrer" class="social-icon social-youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.deep125.vibecv" target="_blank" rel="noopener noreferrer" class="social-icon social-play" aria-label="Google Play"><i class="fab fa-google-play"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61588194216632" target="_blank" rel="noopener noreferrer" class="social-icon social-facebook" aria-label="Facebook" onclick="gtag('event', 'social_click', { event_category: 'engagement', event_label: 'facebook' });"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/vibecvapp/" target="_blank" rel="noopener noreferrer" class="social-icon social-instagram" aria-label="Instagram" onclick="gtag('event', 'social_click', { event_category: 'engagement', event_label: 'instagram' });"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@VibeCvApp" target="_blank" rel="noopener noreferrer" class="social-icon social-youtube" aria-label="YouTube" onclick="gtag('event', 'social_click', { event_category: 'engagement', event_label: 'youtube' });"><i class="fab fa-youtube"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.deep125.vibecv" target="_blank" rel="noopener noreferrer" class="social-icon social-play" aria-label="Google Play" onclick="gtag('event', 'download_click', { event_category: 'engagement', event_label: 'google_play', page: 'footer_social' });"><i class="fab fa-google-play"></i></a>
             </div>
           </div>
 
@@ -640,6 +648,10 @@
 
       btn.addEventListener("click", () => {
         menu.classList.toggle("hidden");
+        gtag("event", "mobile_menu_toggle", {
+          event_category: "engagement",
+          event_label: "mobile_menu"
+        });
       });
     </script>
     
