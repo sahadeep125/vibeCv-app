@@ -17,16 +17,14 @@
     <meta name="theme-color" content="#6B7FD8" />
 
     <!-- SEO Meta Tags -->
-    <title>
-      VibeCV - AI-Powered Resume Builder | Create Your Perfect CV in Minutes
-    </title>
+    <title>AI Resume Builder & ATS Resume Checker App | VibeCV</title>
     <meta
       name="description"
-      content="VibeCV is the best AI-powered resume builder. Create professional CVs instantly with 20+ templates, live PDF preview, and one-click download. Perfect for students, freshers, and professionals."
+      content="Build an ATS-friendly resume with AI in minutes. Check your ATS score free, fix weak sections with one tap, and export a job-winning PDF. Free on iOS & Android."
     />
     <meta
       name="keywords"
-      content="resume builder, CV maker, AI resume, resume templates, professional CV, job application, resume software, online resume builder, CV builder, free resume maker"
+      content="ai resume builder, resume builder app, ats resume checker, free resume builder, cv maker app, ats friendly resume templates, resume builder for freshers, best resume app"
     />
     <meta name="author" content="VibeCV" />
     <meta name="language" content="English" />
@@ -38,18 +36,18 @@
 
     <!-- Open Graph Meta Tags (Social Media) -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://vibecv.com" />
+    <meta property="og:url" content="https://vibecv.com/" />
     <meta
       property="og:title"
-      content="VibeCV - AI-Powered Resume Builder | Create Your Perfect CV in Minutes"
+      content="AI Resume Builder & ATS Resume Checker App | VibeCV"
     />
     <meta
       property="og:description"
-      content="Create professional resumes in seconds with VibeCV's AI-powered resume builder. Choose from 20+ templates, customize colors & fonts, and download as PDF instantly."
+      content="Create an ATS-friendly resume with AI in minutes. Free ATS score checker, 20+ templates, one-tap PDF export. Free on iOS & Android."
     />
-    <meta property="og:image" content="feature-graphic.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="https://vibecv.com/feature-graphic.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="500" />
     <meta property="og:site_name" content="VibeCV" />
     <meta property="og:locale" content="en_US" />
 
@@ -58,21 +56,22 @@
     <meta name="twitter:site" content="@vibecv" />
     <meta
       name="twitter:title"
-      content="VibeCV - AI Resume Builder | Tap. Build. Apply."
+      content="AI Resume Builder & ATS Resume Checker | VibeCV"
     />
     <meta
       name="twitter:description"
-      content="Create your professional resume with AI in seconds. 20+ templates, live preview, PDF download. Best resume maker for jobs."
+      content="Build an ATS-friendly resume with AI. Free ATS score checker, 20+ templates, instant PDF export. Tap. Build. Apply."
     />
-    <meta name="twitter:image" content="feature-graphic.png" />
+    <meta name="twitter:image" content="https://vibecv.com/feature-graphic.png" />
     <meta name="twitter:creator" content="@vibecv" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://vibecv.com/" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo.png" />
-    <link rel="shortcut icon" href="logo.png" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="shortcut icon" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/images/appstore/icon.png" />
 
     <!-- Fonts: Outfit (Modern Sans Serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -103,7 +102,7 @@
                 100: "#e0e3f9",
                 200: "#c2c9f3",
                 300: "#9ba5ec",
-                400: "#6b7fd8", // Your brand color
+                400: "#6b7fd8",
                 500: "#5a6ac6",
                 600: "#4852ab",
                 700: "#3d448c",
@@ -179,6 +178,9 @@
       .social-youtube:hover { background: linear-gradient(135deg, #ff1a1a 0%, #e60000 100%); }
       .social-play { background: linear-gradient(135deg, #00c853 0%, #00a843 100%); }
       .social-play:hover { background: linear-gradient(135deg, #00e676 0%, #00c853 100%); }
+      details > summary { list-style: none; cursor: pointer; }
+      details > summary::-webkit-details-marker { display: none; }
+      details[open] .faq-chevron { transform: rotate(180deg); }
     </style>
   </head>
   <body class="font-sans text-secondary bg-slate-50 overflow-x-hidden">
@@ -204,15 +206,15 @@
         class="container mx-auto px-6 py-4 flex justify-between items-center"
       >
         <!-- Logo -->
-        <a href="index.html" class="flex items-center gap-2 group">
-          <img src="logo.png" alt="VibeCV Logo" class="w-10 h-10 rounded-xl shadow-lg group-hover:rotate-12 transition-transform duration-300" />
+        <a href="/" class="flex items-center gap-2 group">
+          <img src="/logo.png" alt="VibeCV Logo" class="w-10 h-10 rounded-xl shadow-lg group-hover:rotate-12 transition-transform duration-300" />
           <span class="text-2xl font-bold text-gray-800 tracking-tight"
             >Vibe<span class="text-primary-400">CV</span></span
           >
         </a>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center gap-8">
+        <div class="hidden md:flex items-center gap-7">
           <a
             href="#features"
             class="text-gray-600 hover:text-primary-400 font-medium transition-colors"
@@ -226,17 +228,31 @@
             >How It Works</a
           >
           <a
-            href="#templates"
+            href="#screenshots"
             class="text-gray-600 hover:text-primary-400 font-medium transition-colors"
             onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'app_screenshots' });"
-            >App Screenshots</a
+            >Screenshots</a
           >
           <a
-            href="support.html"
-            class="bg-primary-400 hover:bg-primary-500 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-primary-400/30 hover:shadow-primary-400/50 hover:-translate-y-0.5 transition-all duration-300"
-            onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'support_nav' });"
+            href="/guides/"
+            class="text-gray-600 hover:text-primary-400 font-medium transition-colors"
+            onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'guides' });"
+            >Guides</a
           >
-            Support
+          <a
+            href="#faq"
+            class="text-gray-600 hover:text-primary-400 font-medium transition-colors"
+            onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'faq' });"
+            >FAQ</a
+          >
+          <a
+            href="https://play.google.com/store/apps/details?id=com.deep125.vibecv"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-primary-400 hover:bg-primary-500 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-primary-400/30 hover:shadow-primary-400/50 hover:-translate-y-0.5 transition-all duration-300"
+            onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'get_app_nav' });"
+          >
+            Get the App
           </a>
         </div>
 
@@ -255,18 +271,21 @@
         class="hidden md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-xl"
       >
         <div class="flex flex-col p-6 gap-4">
-          <a href="#features" class="text-gray-600 hover:text-primary-400 font-medium" onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'features_mobile' });">Features</a>
-          <a href="#how-it-works" class="text-gray-600 hover:text-primary-400 font-medium" onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'how_it_works_mobile' });">How It Works</a>
-          <a href="#templates" class="text-gray-600 hover:text-primary-400 font-medium" onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'app_screenshots_mobile' });">App Screenshots</a>
-          <a href="support.html" class="w-full text-center py-3 rounded-lg bg-primary-400 text-white font-bold" onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'support_mobile' });">Support</a>
+          <a href="#features" class="text-gray-600 hover:text-primary-400 font-medium">Features</a>
+          <a href="#how-it-works" class="text-gray-600 hover:text-primary-400 font-medium">How It Works</a>
+          <a href="#screenshots" class="text-gray-600 hover:text-primary-400 font-medium">Screenshots</a>
+          <a href="/guides/" class="text-gray-600 hover:text-primary-400 font-medium">Guides</a>
+          <a href="#faq" class="text-gray-600 hover:text-primary-400 font-medium">FAQ</a>
+          <a href="https://play.google.com/store/apps/details?id=com.deep125.vibecv" target="_blank" rel="noopener noreferrer" class="w-full text-center py-3 rounded-lg bg-primary-400 text-white font-bold">Get the App</a>
         </div>
       </div>
     </header>
 
+    <main>
     <!-- Hero Section -->
     <section
       id="home"
-      class="pt-20 pb-20 relative overflow-hidden"
+      class="pt-28 pb-20 relative overflow-hidden"
     >
       <div class="container mx-auto px-6">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
@@ -276,21 +295,19 @@
               class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-50 text-primary-600 font-medium text-sm mb-6 border border-primary-100"
             >
               <i class="fas fa-star text-yellow-400"></i>
-              <span>#1 AI Resume Builder</span>
+              <span>AI Resume Builder & ATS Checker · 4.5★ on Google Play</span>
             </div>
             <h1
               class="text-4xl lg:text-6xl font-extrabold leading-tight mb-6 text-gray-900"
             >
-              Build Your Dream Resume with
+              Build an ATS-Friendly Resume with
               <span class="gradient-text">Artificial Intelligence</span>
             </h1>
             <p class="text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed">
-              Create professional, ATS-friendly resumes in minutes. Choose from
-              20+ premium templates used by top professionals at Google, Amazon,
-              and Apple.
+              VibeCV is the free AI resume builder and ATS resume checker that writes your resume, checks your ATS score, and fixes weak sections with one tap. 20+ ATS-friendly templates. Free to download.
             </p>
             <div
-              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6"
             >
               <a
                 href="https://play.google.com/store/apps/details?id=com.deep125.vibecv"
@@ -303,7 +320,7 @@
                 Get it on Google Play
               </a>
               <a
-                href="https://apps.apple.com/in/app/ai-resume-builder-vibecv/id6759809791"
+                href="https://apps.apple.com/us/app/ats-resume-builder-vibecv-ai/id6759809791"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
@@ -313,6 +330,11 @@
                 Download on App Store
               </a>
             </div>
+            <div class="flex items-center gap-6 justify-center lg:justify-start text-sm text-gray-500">
+              <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-primary-400"></i> Free to download</span>
+              <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-primary-400"></i> Free ATS score check</span>
+              <span class="flex items-center gap-1.5"><i class="fas fa-check-circle text-primary-400"></i> No watermark PDFs</span>
+            </div>
           </div>
 
           <!-- Hero Image -->
@@ -320,12 +342,45 @@
             <!-- Main Mockup -->
             <div class="relative z-10 animate-float">
                 <img
-                    src="vibe-cv-templates.png"
-                    alt="VibeCV App Interface"
+                    src="/vibe-cv-templates.png"
+                    alt="VibeCV AI resume builder app showing 20+ ATS-friendly resume templates"
                     class="w-full max-w-lg mx-auto drop-shadow-2xl"
+                    width="1647"
+                    height="2340"
                 />
             </div>
-            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-16 bg-white border-y border-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 bg-gradient-to-br from-primary-50 to-primary-100/50 rounded-3xl p-10 lg:p-14" data-aos="fade-up">
+          <div class="text-center lg:text-left">
+            <h2 class="text-2xl lg:text-3xl font-extrabold text-gray-900 mb-3">Download VibeCV — Free on iOS & Android</h2>
+            <p class="text-gray-600 max-w-xl">Build your resume, check your ATS score, and export a job-winning PDF today. No credit card required to start.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 items-center">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.deep125.vibecv"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Get VibeCV on Google Play"
+              onclick="gtag('event', 'download_click', { event_category: 'engagement', event_label: 'google_play', page: 'download_section' });"
+            >
+              <img src="/google-play-download.svg" alt="Get it on Google Play" class="h-14 hover:-translate-y-1 transition-transform duration-300" />
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/ats-resume-builder-vibecv-ai/id6759809791"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download VibeCV on the App Store"
+              onclick="gtag('event', 'download_click', { event_category: 'engagement', event_label: 'app_store', page: 'download_section' });"
+            >
+              <img src="/app-store.svg" alt="Download on the App Store" class="h-14 hover:-translate-y-1 transition-transform duration-300" />
+            </a>
           </div>
         </div>
       </div>
@@ -337,10 +392,10 @@
         <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
           <span class="text-primary-400 font-bold tracking-wider uppercase text-sm">Features</span>
           <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mt-2 mb-4">
-            Why Choose VibeCV?
+            An AI Resume Builder Built Around Getting Shortlisted
           </h2>
           <p class="text-gray-600 text-lg">
-            Everything you need to build a perfect resume is right here. Simple, powerful, and effective.
+            VibeCV isn't just a template app — it's an AI resume builder with a built-in ATS resume checker so your resume gets seen, not filtered out.
           </p>
         </div>
 
@@ -356,9 +411,9 @@
             >
               <i class="fas fa-robot"></i>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">AI-Powered Writer</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">AI-Powered Resume Builder</h3>
             <p class="text-gray-600 leading-relaxed">
-              Don't know what to write? Our AI suggests professional summaries and bullet points tailored to your job role.
+              Don't know what to write? Our AI resume writer analyzes your details and generates a complete, professionally worded resume in seconds.
             </p>
           </div>
 
@@ -369,13 +424,13 @@
             data-aos-delay="200"
           >
             <div
-              class="w-14 h-14 bg-purple-100 text-purple-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
+              class="w-14 h-14 bg-red-100 text-red-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
             >
-              <i class="fas fa-layer-group"></i>
+              <i class="fas fa-magnifying-glass-chart"></i>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">20+ Premium Templates</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Free ATS Resume Checker</h3>
             <p class="text-gray-600 leading-relaxed">
-              Stand out with modern, creative, and professional templates designed by HR experts.
+              Check your ATS score instantly, find missing keywords, and detect formatting issues before you apply — most companies filter resumes with an ATS.
             </p>
           </div>
 
@@ -386,13 +441,13 @@
             data-aos-delay="300"
           >
             <div
-              class="w-14 h-14 bg-blue-100 text-blue-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
+              class="w-14 h-14 bg-yellow-100 text-yellow-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
             >
-              <i class="fas fa-eye"></i>
+              <i class="fas fa-wand-magic-sparkles"></i>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Live Preview</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">One-Tap AI Resume Fix</h3>
             <p class="text-gray-600 leading-relaxed">
-              See changes in real-time as you type. Switch templates instantly without losing any data.
+              Fix weak summaries, add missing skills, and optimize content for ATS with a single tap — no rewriting from scratch.
             </p>
           </div>
 
@@ -403,13 +458,13 @@
             data-aos-delay="400"
           >
             <div
-              class="w-14 h-14 bg-green-100 text-green-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
+              class="w-14 h-14 bg-purple-100 text-purple-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
             >
-              <i class="fas fa-file-pdf"></i>
+              <i class="fas fa-layer-group"></i>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Instant PDF Export</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">20+ ATS-Friendly Templates</h3>
             <p class="text-gray-600 leading-relaxed">
-              Download high-quality, print-ready PDFs with a single click. No watermarks, completely free.
+              Professional, Creative, Minimal, and Modern resume templates — all designed to be ATS-friendly and recruiter-approved.
             </p>
           </div>
 
@@ -420,13 +475,13 @@
             data-aos-delay="500"
           >
             <div
-              class="w-14 h-14 bg-yellow-100 text-yellow-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
+              class="w-14 h-14 bg-blue-100 text-blue-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
             >
-              <i class="fas fa-laptop-mobile"></i>
+              <i class="fas fa-eye"></i>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Multi-Device Sync</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Live Resume Preview</h3>
             <p class="text-gray-600 leading-relaxed">
-              Start on your phone, finish on your laptop. Your data is synced securely in the cloud.
+              See changes in real-time as you type. Switch templates instantly without losing any of your resume content.
             </p>
           </div>
 
@@ -437,13 +492,13 @@
             data-aos-delay="600"
           >
             <div
-              class="w-14 h-14 bg-pink-100 text-pink-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
+              class="w-14 h-14 bg-green-100 text-green-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform"
             >
-              <i class="fas fa-lock"></i>
+              <i class="fas fa-file-pdf"></i>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Privacy First</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">One-Click PDF Export</h3>
             <p class="text-gray-600 leading-relaxed">
-              Your data is yours. We use bank-level encryption to keep your personal information safe.
+              Download high-quality, ATS-friendly, print-ready PDFs with a single click. No watermarks.
             </p>
           </div>
         </div>
@@ -456,55 +511,63 @@
         <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
            <span class="text-primary-400 font-bold tracking-wider uppercase text-sm">Process</span>
           <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mt-2 mb-4">
-            How It Works
+            How VibeCV Works
           </h2>
           <p class="text-gray-600 text-lg">
-            Three simple steps to your new job-ready resume.
+            Four simple steps from blank page to a job-ready, ATS-checked resume.
           </p>
         </div>
 
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 relative">
-           <!-- Connecting Line (Desktop) -->
-           <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 -z-0 -translate-y-1/2 transform scale-x-75"></div>
-
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Step 1 -->
-          <div class="relative z-10 w-full md:w-1/3 p-6 text-center group" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative z-10 p-6 text-center group" data-aos="fade-up" data-aos-delay="100">
             <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold text-primary-400 mb-6 border-4 border-primary-100 group-hover:scale-110 transition-transform">
               1
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">Enter Your Details</h3>
             <p class="text-gray-600">
-              Fill in your experience, education, and skills. Our AI helps you phrase it perfectly.
+              Add your experience, education, and skills — or let AI generate a full draft for you.
             </p>
           </div>
 
           <!-- Step 2 -->
-          <div class="relative z-10 w-full md:w-1/3 p-6 text-center group" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative z-10 p-6 text-center group" data-aos="fade-up" data-aos-delay="200">
             <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold text-primary-400 mb-6 border-4 border-primary-100 group-hover:scale-110 transition-transform">
               2
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">Choose a Template</h3>
             <p class="text-gray-600">
-              Pick a design that fits your industry and personality from our curated list.
+              Pick from 20+ ATS-friendly templates that fit your industry and personality.
             </p>
           </div>
 
           <!-- Step 3 -->
-          <div class="relative z-10 w-full md:w-1/3 p-6 text-center group" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative z-10 p-6 text-center group" data-aos="fade-up" data-aos-delay="300">
             <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold text-primary-400 mb-6 border-4 border-primary-100 group-hover:scale-110 transition-transform">
               3
             </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Check Your ATS Score</h3>
+            <p class="text-gray-600">
+              Run the free ATS checker and fix weak sections instantly with one tap.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="relative z-10 p-6 text-center group" data-aos="fade-up" data-aos-delay="400">
+            <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-lg flex items-center justify-center text-2xl font-bold text-primary-400 mb-6 border-4 border-primary-100 group-hover:scale-110 transition-transform">
+              4
+            </div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">Download & Apply</h3>
             <p class="text-gray-600">
-              Export as PDF instantly and start applying to your dream jobs with confidence.
+              Export as a watermark-free PDF instantly and start applying with confidence.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Templates Section -->
-    <section id="templates" class="py-20 bg-white">
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="py-20 bg-white">
       <div class="container mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
            <span class="text-primary-400 font-bold tracking-wider uppercase text-sm">Gallery</span>
@@ -512,29 +575,184 @@
             App Screenshots
           </h2>
           <p class="text-gray-600 text-lg">
-            See VibeCV in action. Create professional resumes on your phone in minutes.
+            See VibeCV's AI resume builder and ATS checker in action, straight from the App Store and Google Play listings.
           </p>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                <img src="images/1.PNG" alt="VibeCV app screenshot" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                <img src="/images/appstore/screenshot-1.jpeg" alt="VibeCV 20+ ATS-friendly resume templates gallery" loading="lazy" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="150">
-                <img src="images/2.PNG" alt="VibeCV app screenshot" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                <img src="/images/appstore/screenshot-2.jpg" alt="VibeCV AI-powered resume builder home screen" loading="lazy" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                <img src="images/3.PNG" alt="VibeCV app screenshot" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                <img src="/images/appstore/screenshot-4.png" alt="VibeCV ATS score checker showing resume match score" loading="lazy" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="250">
-                <img src="images/4.PNG" alt="VibeCV app screenshot" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                <img src="/images/appstore/screenshot-3.png" alt="VibeCV live resume preview with download and share options" loading="lazy" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
-                <img src="images/5.PNG" alt="VibeCV app screenshot" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                <img src="/images/appstore/screenshot-5.png" alt="VibeCV one-click PDF export and share screen" loading="lazy" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="350">
-                <img src="images/6.PNG" alt="VibeCV app screenshot" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                <img src="/images/appstore/screenshot-6.png" alt="VibeCV resume builder dashboard, tap build apply" loading="lazy" class="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500" />
             </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section id="guides" class="py-20 bg-primary-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-primary-400 font-bold tracking-wider uppercase text-sm">Guides</span>
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mt-2 mb-4">
+            Resume & Career Guides
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Real answers to what job seekers actually search for, each with a step-by-step walkthrough in VibeCV.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <a href="/guides/check-ats-score-free.html" class="group block rounded-3xl overflow-hidden bg-white border border-gray-100 hover:border-primary-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="50">
+            <div class="aspect-[4/3] overflow-hidden bg-primary-50"><img src="/images/appstore/screenshot-4.png" alt="How to check your resume's ATS score for free" loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" /></div>
+            <div class="p-6"><span class="text-primary-400 font-semibold text-xs uppercase tracking-wider">ATS Score</span><h3 class="font-bold text-lg text-gray-900 mt-2 mb-2 group-hover:text-primary-500 transition-colors">How to Check Your Resume's ATS Score for Free</h3><span class="inline-flex items-center gap-1 text-primary-400 font-semibold text-sm">Read Guide <i class="fas fa-arrow-right text-xs"></i></span></div>
+          </a>
+          <a href="/guides/fix-resume-ats-rejection.html" class="group block rounded-3xl overflow-hidden bg-white border border-gray-100 hover:border-primary-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+            <div class="aspect-[4/3] overflow-hidden bg-primary-50"><img src="/images/appstore/screenshot-4.png" alt="Why your resume gets rejected by ATS and how to fix it" loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" /></div>
+            <div class="p-6"><span class="text-primary-400 font-semibold text-xs uppercase tracking-wider">ATS Rejection</span><h3 class="font-bold text-lg text-gray-900 mt-2 mb-2 group-hover:text-primary-500 transition-colors">Why Your Resume Gets Rejected by ATS</h3><span class="inline-flex items-center gap-1 text-primary-400 font-semibold text-sm">Read Guide <i class="fas fa-arrow-right text-xs"></i></span></div>
+          </a>
+          <a href="/guides/best-resume-builder-for-freshers.html" class="group block rounded-3xl overflow-hidden bg-white border border-gray-100 hover:border-primary-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="150">
+            <div class="aspect-[4/3] overflow-hidden bg-primary-50"><img src="/images/appstore/screenshot-6.png" alt="Best resume builder app for freshers and first-time job seekers" loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" /></div>
+            <div class="p-6"><span class="text-primary-400 font-semibold text-xs uppercase tracking-wider">For Freshers</span><h3 class="font-bold text-lg text-gray-900 mt-2 mb-2 group-hover:text-primary-500 transition-colors">Best Resume Builder App for Freshers</h3><span class="inline-flex items-center gap-1 text-primary-400 font-semibold text-sm">Read Guide <i class="fas fa-arrow-right text-xs"></i></span></div>
+          </a>
+          <a href="/guides/ats-friendly-resume-templates.html" class="group block rounded-3xl overflow-hidden bg-white border border-gray-100 hover:border-primary-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+            <div class="aspect-[4/3] overflow-hidden bg-primary-50"><img src="/images/appstore/screenshot-1.jpeg" alt="Free ATS-friendly resume templates" loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" /></div>
+            <div class="p-6"><span class="text-primary-400 font-semibold text-xs uppercase tracking-wider">Templates</span><h3 class="font-bold text-lg text-gray-900 mt-2 mb-2 group-hover:text-primary-500 transition-colors">Free ATS-Friendly Resume Templates</h3><span class="inline-flex items-center gap-1 text-primary-400 font-semibold text-sm">Read Guide <i class="fas fa-arrow-right text-xs"></i></span></div>
+          </a>
+          <a href="/guides/make-a-resume-on-your-phone.html" class="group block rounded-3xl overflow-hidden bg-white border border-gray-100 hover:border-primary-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="250">
+            <div class="aspect-[4/3] overflow-hidden bg-primary-50"><img src="/images/appstore/screenshot-2.jpg" alt="How to make a resume on your phone, iPhone and Android" loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" /></div>
+            <div class="p-6"><span class="text-primary-400 font-semibold text-xs uppercase tracking-wider">Mobile</span><h3 class="font-bold text-lg text-gray-900 mt-2 mb-2 group-hover:text-primary-500 transition-colors">How to Make a Resume on Your Phone</h3><span class="inline-flex items-center gap-1 text-primary-400 font-semibold text-sm">Read Guide <i class="fas fa-arrow-right text-xs"></i></span></div>
+          </a>
+          <a href="/guides/write-a-resume-with-ai.html" class="group block rounded-3xl overflow-hidden bg-white border border-gray-100 hover:border-primary-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+            <div class="aspect-[4/3] overflow-hidden bg-primary-50"><img src="/images/playstore/screenshot-5.png" alt="How to write a resume with AI in minutes" loading="lazy" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" /></div>
+            <div class="p-6"><span class="text-primary-400 font-semibold text-xs uppercase tracking-wider">AI Writing</span><h3 class="font-bold text-lg text-gray-900 mt-2 mb-2 group-hover:text-primary-500 transition-colors">How to Write a Resume With AI</h3><span class="inline-flex items-center gap-1 text-primary-400 font-semibold text-sm">Read Guide <i class="fas fa-arrow-right text-xs"></i></span></div>
+          </a>
+        </div>
+
+        <div class="text-center mt-12" data-aos="fade-up">
+          <a href="/guides/" class="inline-flex items-center gap-2 bg-white text-primary-500 border border-primary-200 hover:bg-primary-400 hover:text-white px-8 py-3.5 rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300" onclick="gtag('event', 'nav_click', { event_category: 'engagement', event_label: 'view_all_guides' });">
+            View All 10 Guides <i class="fas fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-primary-400 font-bold tracking-wider uppercase text-sm">FAQ</span>
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mt-2 mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Quick answers about VibeCV's AI resume builder and ATS checker.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-4">
+          <details class="group bg-gray-50 rounded-2xl p-6 open:bg-primary-50 transition-colors" data-aos="fade-up">
+            <summary class="flex justify-between items-center gap-4 font-bold text-gray-900">
+              <span>How do I check my resume's ATS score for free?</span>
+              <i class="fas fa-chevron-down faq-chevron text-primary-400 transition-transform duration-300 flex-shrink-0"></i>
+            </summary>
+            <p class="text-gray-600 mt-4 leading-relaxed">Open VibeCV's ATS Score Checker, select your resume, and tap Check ATS Score. You'll get a free score in seconds showing formatting, structure, and keyword match rate.</p>
+            <a href="/guides/check-ats-score-free.html" class="inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-3 hover:underline">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+          </details>
+
+          <details class="group bg-gray-50 rounded-2xl p-6 open:bg-primary-50 transition-colors" data-aos="fade-up" data-aos-delay="30">
+            <summary class="flex justify-between items-center gap-4 font-bold text-gray-900">
+              <span>Why does my resume keep getting rejected by ATS?</span>
+              <i class="fas fa-chevron-down faq-chevron text-primary-400 transition-transform duration-300 flex-shrink-0"></i>
+            </summary>
+            <p class="text-gray-600 mt-4 leading-relaxed">The most common causes are complex formatting (tables, columns), missing keywords from the job description, and non-standard section headings. VibeCV's One-Tap AI Resume Fix corrects all three automatically.</p>
+            <a href="/guides/fix-resume-ats-rejection.html" class="inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-3 hover:underline">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+          </details>
+
+          <details class="group bg-gray-50 rounded-2xl p-6 open:bg-primary-50 transition-colors" data-aos="fade-up" data-aos-delay="60">
+            <summary class="flex justify-between items-center gap-4 font-bold text-gray-900">
+              <span>What's the best resume builder app for freshers?</span>
+              <i class="fas fa-chevron-down faq-chevron text-primary-400 transition-transform duration-300 flex-shrink-0"></i>
+            </summary>
+            <p class="text-gray-600 mt-4 leading-relaxed">VibeCV is built for freshers — it generates a full resume from education, projects, and skills alone, with no work history required, and checks it's ATS-friendly before you apply.</p>
+            <a href="/guides/best-resume-builder-for-freshers.html" class="inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-3 hover:underline">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+          </details>
+
+          <details class="group bg-gray-50 rounded-2xl p-6 open:bg-primary-50 transition-colors" data-aos="fade-up">
+            <summary class="flex justify-between items-center gap-4 font-bold text-gray-900">
+              <span>Are VibeCV's resume templates ATS-friendly?</span>
+              <i class="fas fa-chevron-down faq-chevron text-primary-400 transition-transform duration-300 flex-shrink-0"></i>
+            </summary>
+            <p class="text-gray-600 mt-4 leading-relaxed">Yes, all 20+ templates, including the Creative and Modern styles, are built on ATS-parseable, single-column structures so visual design never breaks machine readability.</p>
+            <a href="/guides/ats-friendly-resume-templates.html" class="inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-3 hover:underline">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+          </details>
+
+          <details class="group bg-gray-50 rounded-2xl p-6 open:bg-primary-50 transition-colors" data-aos="fade-up" data-aos-delay="30">
+            <summary class="flex justify-between items-center gap-4 font-bold text-gray-900">
+              <span>Can I build a resume entirely on my phone?</span>
+              <i class="fas fa-chevron-down faq-chevron text-primary-400 transition-transform duration-300 flex-shrink-0"></i>
+            </summary>
+            <p class="text-gray-600 mt-4 leading-relaxed">Yes. VibeCV is designed mobile-first — writing, templates, ATS checking, and PDF export all happen inside the app on iPhone or Android, no laptop needed.</p>
+            <a href="/guides/make-a-resume-on-your-phone.html" class="inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-3 hover:underline">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+          </details>
+
+          <details class="group bg-gray-50 rounded-2xl p-6 open:bg-primary-50 transition-colors" data-aos="fade-up" data-aos-delay="60">
+            <summary class="flex justify-between items-center gap-4 font-bold text-gray-900">
+              <span>How does AI resume writing work in VibeCV?</span>
+              <i class="fas fa-chevron-down faq-chevron text-primary-400 transition-transform duration-300 flex-shrink-0"></i>
+            </summary>
+            <p class="text-gray-600 mt-4 leading-relaxed">Enter your role, experience, and skills, and VibeCV's AI-Powered Resume Builder writes a complete, professionally worded summary and bullet points instantly — fully editable before you export.</p>
+            <a href="/guides/write-a-resume-with-ai.html" class="inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-3 hover:underline">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+          </details>
+
+          <details class="group bg-gray-50 rounded-2xl p-6 open:bg-primary-50 transition-colors" data-aos="fade-up">
+            <summary class="flex justify-between items-center gap-4 font-bold text-gray-900">
+              <span>I have no work experience — can VibeCV still help?</span>
+              <i class="fas fa-chevron-down faq-chevron text-primary-400 transition-transform duration-300 flex-shrink-0"></i>
+            </summary>
+            <p class="text-gray-600 mt-4 leading-relaxed">Yes. VibeCV builds strong resumes from education, coursework, projects, and internships alone, exactly what most entry-level and student applications expect.</p>
+            <a href="/guides/resume-builder-for-students.html" class="inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-3 hover:underline">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+          </details>
+
+          <details class="group bg-gray-50 rounded-2xl p-6 open:bg-primary-50 transition-colors" data-aos="fade-up" data-aos-delay="30">
+            <summary class="flex justify-between items-center gap-4 font-bold text-gray-900">
+              <span>How do I add the right keywords for ATS?</span>
+              <i class="fas fa-chevron-down faq-chevron text-primary-400 transition-transform duration-300 flex-shrink-0"></i>
+            </summary>
+            <p class="text-gray-600 mt-4 leading-relaxed">Run VibeCV's ATS Score Checker to see your keyword match rate against the job description, then use the One-Tap AI Resume Fix to add relevant missing skills automatically.</p>
+            <a href="/guides/add-keywords-to-resume-for-ats.html" class="inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-3 hover:underline">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+          </details>
+
+          <details class="group bg-gray-50 rounded-2xl p-6 open:bg-primary-50 transition-colors" data-aos="fade-up" data-aos-delay="60">
+            <summary class="flex justify-between items-center gap-4 font-bold text-gray-900">
+              <span>Is VibeCV better than other CV maker apps?</span>
+              <i class="fas fa-chevron-down faq-chevron text-primary-400 transition-transform duration-300 flex-shrink-0"></i>
+            </summary>
+            <p class="text-gray-600 mt-4 leading-relaxed">Unlike template-only CV makers, VibeCV combines AI writing, a real ATS resume checker, multiple resume management, and cloud sync, free on both iPhone and Android.</p>
+            <a href="/guides/best-cv-maker-app.html" class="inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-3 hover:underline">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+          </details>
+
+          <details class="group bg-gray-50 rounded-2xl p-6 open:bg-primary-50 transition-colors" data-aos="fade-up">
+            <summary class="flex justify-between items-center gap-4 font-bold text-gray-900">
+              <span>I'm switching careers — will VibeCV help reframe my resume?</span>
+              <i class="fas fa-chevron-down faq-chevron text-primary-400 transition-transform duration-300 flex-shrink-0"></i>
+            </summary>
+            <p class="text-gray-600 mt-4 leading-relaxed">Yes. VibeCV's AI helps translate your experience into your target industry's language, and Multiple Resume Management lets you save a tailored version for each application.</p>
+            <a href="/guides/resume-builder-for-career-change.html" class="inline-flex items-center gap-1 text-primary-500 font-semibold text-sm mt-3 hover:underline">Learn More <i class="fas fa-arrow-right text-xs"></i></a>
+          </details>
         </div>
       </div>
     </section>
@@ -554,7 +772,7 @@
             Ready to Land Your Dream Job?
           </h2>
           <p class="text-lg lg:text-xl text-primary-50 mb-10 max-w-2xl mx-auto relative z-10">
-            Join thousands of successful professionals who built their CVs with VibeCV. Download the app now — it's free, fast, and easy.
+            Join thousands of job seekers building ATS-friendly resumes with VibeCV. Download the app now — it's free, fast, and AI-powered.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center relative z-10">
             <a
@@ -568,7 +786,7 @@
               Google Play
             </a>
             <a
-              href="https://apps.apple.com/in/app/ai-resume-builder-vibecv/id6759809791"
+              href="https://apps.apple.com/us/app/ats-resume-builder-vibecv-ai/id6759809791"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center gap-2 bg-white text-primary-600 hover:bg-gray-50 px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
@@ -581,6 +799,7 @@
         </div>
       </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer id="footer" class="bg-secondary text-white pt-20 pb-10 border-t border-gray-800">
@@ -588,12 +807,12 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <!-- Brand -->
           <div class="col-span-1 md:col-span-2">
-            <a href="index.html" class="flex items-center gap-2 mb-6">
-              <img src="logo.png" alt="VibeCV Logo" class="w-8 h-8 rounded-lg" />
+            <a href="/" class="flex items-center gap-2 mb-6">
+              <img src="/logo.png" alt="VibeCV Logo" class="w-8 h-8 rounded-lg" />
               <span class="text-2xl font-bold">Vibe<span class="text-primary-400">CV</span></span>
             </a>
             <p class="text-gray-400 mb-6 max-w-sm">
-                VibeCV is the ultimate AI-powered resume builder designed to help you create professional resumes in minutes.
+                VibeCV is the AI-powered resume builder and ATS resume checker that helps you build job-winning, ATS-friendly resumes in minutes. Free on iOS and Android.
             </p>
             <div class="flex gap-3">
                 <a href="https://www.facebook.com/profile.php?id=61588194216632" target="_blank" rel="noopener noreferrer" class="social-icon social-facebook" aria-label="Facebook" onclick="gtag('event', 'social_click', { event_category: 'engagement', event_label: 'facebook' });"><i class="fab fa-facebook-f"></i></a>
@@ -607,10 +826,11 @@
           <div>
             <h4 class="text-lg font-bold mb-6">Product</h4>
             <ul class="space-y-4 text-gray-400">
-              <li><a href="index.html#features" class="hover:text-primary-400 transition-colors">Features</a></li>
-              <li><a href="index.html#how-it-works" class="hover:text-primary-400 transition-colors">How It Works</a></li>
-              <li><a href="index.html#templates" class="hover:text-primary-400 transition-colors">App Screenshots</a></li>
-              <li><a href="support.html" class="hover:text-primary-400 transition-colors">Support</a></li>
+              <li><a href="#features" class="hover:text-primary-400 transition-colors">Features</a></li>
+              <li><a href="#how-it-works" class="hover:text-primary-400 transition-colors">How It Works</a></li>
+              <li><a href="#screenshots" class="hover:text-primary-400 transition-colors">App Screenshots</a></li>
+              <li><a href="/guides/" class="hover:text-primary-400 transition-colors">Guides</a></li>
+              <li><a href="#faq" class="hover:text-primary-400 transition-colors">FAQ</a></li>
             </ul>
           </div>
 
@@ -618,9 +838,9 @@
           <div>
             <h4 class="text-lg font-bold mb-6">Support</h4>
             <ul class="space-y-4 text-gray-400">
-              <li><a href="support.html" class="hover:text-primary-400 transition-colors">Contact Us</a></li>
-              <li><a href="terms-of-service.html" class="hover:text-primary-400 transition-colors">Terms of Service</a></li>
-              <li><a href="privacy-policy.html" class="hover:text-primary-400 transition-colors">Privacy Policy</a></li>
+              <li><a href="/support.html" class="hover:text-primary-400 transition-colors">Contact Us</a></li>
+              <li><a href="/terms-of-service.html" class="hover:text-primary-400 transition-colors">Terms of Service</a></li>
+              <li><a href="/privacy-policy.html" class="hover:text-primary-400 transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
@@ -654,20 +874,26 @@
         });
       });
     </script>
-    
-    <!-- Structured Data -->
+
+    <!-- Structured Data: SoftwareApplication -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "VibeCV",
-        "description": "AI-powered resume builder that creates professional CVs in seconds with 20+ templates",
+        "name": "VibeCV - AI Resume Builder & ATS Checker",
+        "alternateName": "VibeCV",
+        "description": "AI-powered resume builder and ATS resume checker. Create professional, ATS-friendly resumes with 20+ templates, live preview, and one-click PDF export.",
         "url": "https://vibecv.com",
         "applicationCategory": "BusinessApplication",
+        "operatingSystem": "iOS, Android",
+        "downloadUrl": [
+          "https://apps.apple.com/us/app/ats-resume-builder-vibecv-ai/id6759809791",
+          "https://play.google.com/store/apps/details?id=com.deep125.vibecv"
+        ],
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "ratingCount": "5000",
+          "ratingValue": "4.5",
+          "ratingCount": "24",
           "bestRating": "5",
           "worstRating": "1"
         },
@@ -679,10 +905,89 @@
         },
         "author": {
           "@type": "Organization",
-          "name": "VibeCV Inc.",
+          "name": "VibeCV",
           "url": "https://vibecv.com",
           "logo": "https://vibecv.com/logo.png"
         }
+      }
+    </script>
+
+    <!-- Structured Data: Organization (entity clarity for search engines and AI assistants) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VibeCV",
+        "url": "https://vibecv.com",
+        "logo": "https://vibecv.com/logo.png",
+        "description": "VibeCV is an AI-powered resume builder and ATS resume checker app available on iOS and Android.",
+        "sameAs": [
+          "https://apps.apple.com/us/app/ats-resume-builder-vibecv-ai/id6759809791",
+          "https://play.google.com/store/apps/details?id=com.deep125.vibecv",
+          "https://www.instagram.com/vibecvapp/",
+          "https://www.facebook.com/profile.php?id=61588194216632",
+          "https://www.youtube.com/@VibeCvApp"
+        ]
+      }
+    </script>
+
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I check my resume's ATS score for free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Open VibeCV's ATS Score Checker, select your resume, and tap Check ATS Score. You'll get a free score in seconds showing formatting, structure, and keyword match rate." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my resume keep getting rejected by ATS?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The most common causes are complex formatting (tables, columns), missing keywords from the job description, and non-standard section headings. VibeCV's One-Tap AI Resume Fix corrects all three automatically." }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the best resume builder app for freshers?",
+            "acceptedAnswer": { "@type": "Answer", "text": "VibeCV is built for freshers, it generates a full resume from education, projects, and skills alone, with no work history required, and checks it's ATS-friendly before you apply." }
+          },
+          {
+            "@type": "Question",
+            "name": "Are VibeCV's resume templates ATS-friendly?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, all 20+ templates, including the Creative and Modern styles, are built on ATS-parseable, single-column structures so visual design never breaks machine readability." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I build a resume entirely on my phone?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. VibeCV is designed mobile-first, writing, templates, ATS checking, and PDF export all happen inside the app on iPhone or Android, no laptop needed." }
+          },
+          {
+            "@type": "Question",
+            "name": "How does AI resume writing work in VibeCV?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Enter your role, experience, and skills, and VibeCV's AI-Powered Resume Builder writes a complete, professionally worded summary and bullet points instantly, fully editable before you export." }
+          },
+          {
+            "@type": "Question",
+            "name": "I have no work experience, can VibeCV still help?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. VibeCV builds strong resumes from education, coursework, projects, and internships alone, exactly what most entry-level and student applications expect." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I add the right keywords for ATS?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Run VibeCV's ATS Score Checker to see your keyword match rate against the job description, then use the One-Tap AI Resume Fix to add relevant missing skills automatically." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is VibeCV better than other CV maker apps?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Unlike template-only CV makers, VibeCV combines AI writing, a real ATS resume checker, multiple resume management, and cloud sync, free on both iPhone and Android." }
+          },
+          {
+            "@type": "Question",
+            "name": "I'm switching careers, will VibeCV help reframe my resume?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. VibeCV's AI helps translate your experience into your target industry's language, and Multiple Resume Management lets you save a tailored version for each application." }
+          }
+        ]
       }
     </script>
   </body>
